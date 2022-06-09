@@ -14,14 +14,18 @@ import static com.mclegoman.legolib.main.MOD_ID;
 
 public class ModEffects {
     public static StatusEffect INABILITY;
+    public static StatusEffect UPGRADING;
+    public static StatusEffect POWERED;
 
-    public static StatusEffect registerInabilityEffect(String name) {
+    public static StatusEffect registerBlankEffect(String name) {
         return Registry.register(Registry.STATUS_EFFECT, new Identifier(MOD_ID, name),
                 new BlankEffect(StatusEffectCategory.HARMFUL, 0xFA113D));
     }
 
     public static void registerEffects() {
         main.LOGGER.info("Registering Effects for Mod:", MOD_ID);
-        INABILITY = registerInabilityEffect("inability");
+        INABILITY = registerBlankEffect("inability");
+        UPGRADING = registerBlankEffect("upgrading");
+        POWERED = registerBlankEffect("powered");
     }
 }
