@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "legolib",
+  "version": "${version}",
+
+  "name": "LegoLib",
+  "description": "Library for Mods created by MCLegoMan.",
+  "authors": [
+    "MCLegoMan"
+  ],
+  "contact": {
+    "homepage": "https://mclegoman.com/open-source-mclegoman-software-license/"
+  },
+
+  "license": "Open Source MCLegoMan Software License",
+  "icon": "assets/legolib/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.mclegoman.legolib.main"
+    ]
+  },
+  "mixins": [
+    "legolib.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*",
+    "minecraft": ">=1.19",
+    "java": ">=17"
+  }
+}
