@@ -4,5 +4,16 @@
 
   "effect.legolib.inability": "Inability",
   "effect.legolib.upgrading": "Upgrading",
-  "effect.legolib.powered": "Powered"
+  "effect.legolib.powered": "Powered",
+
+  "legolib.keybinds.origins": "Origins: More Keybinds",
+
+  "legolib.keybind.origins.one_active": "Active Power (A)",
+  "legolib.keybind.origins.two_active": "Active Power (B)",
+  "legolib.keybind.origins.three_active": "Active Power (C)",
+  "legolib.keybind.origins.five_active": "Active Power (D)",
+  "legolib.keybind.origins.four_active": "Active Power (E)",
+  "legolib.keybind.origins.six_active": "Active Power (F)",
+  "legolib.keybind.origins.seven_active": "Active Power (G)",
+  "legolib.keybind.origins.eight_active": "Active Power (H)"
 }
