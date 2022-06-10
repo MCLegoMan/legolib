@@ -1,4 +1,5 @@
-"LegoLib"
+**LegoLib**
+
 **LegoLib contains code and other resources that can be used for other projects.**
 **LegoLib does nothing for the end user by itself.**
  
@@ -16,15 +17,15 @@ _To use this, add LegoLib to your Project and use "EnchantedItem" instead of "It
 
 In your 'build.gradle' file, add the following 'modImplementation', it should look like the following:
 
-dependencies {
+`dependencies {
     modImplementation "com.github.MCLegoMan:legolib:${project.legolib_version}"
-}
+}`
 
  
 
 In your 'gradle.properties' file, add the following under your dependancies:
 
-legolib_version=1.2.0
+`legolib_version=1.2.0`
 
  
 
