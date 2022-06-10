@@ -19,6 +19,9 @@
   "entrypoints": {
     "main": [
       "com.mclegoman.legolib.main"
+    ],
+    "client": [
+      "com.mclegoman.legolib.clientMain"
     ]
   },
   "mixins": [
