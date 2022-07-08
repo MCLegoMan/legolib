@@ -17,20 +17,27 @@ public class main implements ModInitializer {
     public static final String MOD_ID = "legolib";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     public static boolean modPehkuiInstalled = false;
+    public static boolean modOriginsInstalled = false;
 
     @Override
     public void onInitialize() {
-        ModEffects.registerEffects();
-        ModPowers.registerPowers();
-        ModScaleTypes.registerScaleTypes();
-
         FabricLoader.getInstance().getModContainer("pehkui").ifPresent(
                 modContainer -> {
                     modPehkuiInstalled = true;
                 }
         );
-        if(modPehkuiInstalled == true) {
-            ModPehkuiPowers.registerPehkuiPowers();
+        FabricLoader.getInstance().getModContainer("origins").ifPresent(
+                modContainer -> {
+                    modOriginsInstalled = true;
+                }
+        );
+        if(modOriginsInstalled == true) {
+            ModEffects.registerEffects();
+            ModPowers.registerPowers();
+            if(modPehkuiInstalled == true) {
+                ModScaleTypes.registerScaleTypes();
+                ModPehkuiPowers.registerPehkuiPowers();
+            }
         }
     }
 
